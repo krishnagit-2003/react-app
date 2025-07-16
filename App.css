@@ -1,0 +1,522 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 18px;
+}
+
+nav a:hover {
+
+  color: #00bfff;
+}
+/* Dropdown menu for HCPs */
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  border: 1px solid #fff;
+  min-width: 280px;
+  z-index: 1001;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  background-color: #000;
+}
+
+.dropdown-content a:hover {
+  background-color: #00bfff;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.request-demo {
+  padding: 0.5rem 1rem;
+  border: 3px solid #00bfff;
+  width:200px;
+  border-radius: 19px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+}
+
+.request-demo:hover {
+  background: linear-gradient(to bottom, #2F589E, #4DA4E5);
+  color: white;
+  border: 3px solid white;
+}
+
+    .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+    }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero .video-bg {
+  position: absolute;
+  top: 1.5;
+  left: 0;
+  min-width: 1440px;
+  min-height: 810px;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 60%;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text pre {
+  font-family: 'inter', sans-serif;
+  font-weight: 100;
+  font-size: 96px;
+  color: #ffffff;
+  text-shadow: 0 0 6px #00bfff;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+
+
+.hero-text p {
+  font-family: 'roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  margin: 0.3rem 0;
+}
+
+.hero-text .btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  border: 3px solid #00bfff;
+  width: 159px;
+  background: transparent;
+  color: #ccc;
+  border-radius: 19px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.hero-text .btn:hover {
+    background: linear-gradient(to bottom, #2F589E, #4DA4E5);
+  color: white;
+  border: 3px solid white;
+}
+
+/* Sections */
+
+
+.content-section {
+  padding: 3rem 2rem;
+}
+
+.content-section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.content-section h3 {
+  font-size: 1.1rem;
+  color: #00bfff;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.content.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  min-width: 180px;
+}
+
+.image {
+  flex: 1;
+  min-width: 150px;
+  height: 470px;
+  background: #ccc; 
+  
+}
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+
+/* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center; 
+}
+
+footer div {
+  flex: 1;
+  min-width: 200px;
+  
+}
+
+footer a {
+  color: #0077b6; 
+  display: block;
+  text-decoration: 'poppins';
+  margin-top: 0.3rem;
+
+
+}
+
+    @media (max-width: 1024px) {
+
+      
+      .hero-text pre {
+        font-size: 72px;
+      }
+
+      .hero-text p {
+        font-size: 24px;
+      }
+
+      .request-demo {
+    display: none;
+  }
+    .hero .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+      .image {
+        height: auto;
+      }
+    }
+
+   
+    @media (max-width: 480px) {
+
+      .hero .video-bg {
+      position: absolute;
+      top: 1.5;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      opacity: 60%;
+    }
+      .hero-text pre {
+        font-size: 36px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+      }
+
+      .hero-text .btn {
+        font-size: 14px;
+        padding: 0.4rem 1rem;
+        width: 100%;
+      }
+
+      .request-demo {
+      display: none;
+     }
+       .hero .video-bg {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       z-index: -2;
+       opacity: 0.6;
+      }
+      nav a {
+        font-size: 16px;
+      }
+
+      .text {
+        font-size: 14px;
+      }
+    }
+
+    /* styles.css */
+
+/* Keep your existing CSS styles */
+
+/* Mobile Menu Styles */
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+    margin-right: 0%;
+  }
+   .request-demo {
+    display: none;
+  }
+
+  .hero .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.6; 
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 1rem 2rem;
+    z-index: 1002;
+  }
+
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .dropdown-content {
+    position: static;
+    border: none;
+    background: transparent;
+    padding-left: 1rem;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .request-demo {
+    display: none;
+  }
+
+  .hero {
+    height: 50%;
+    margin-top: 50px;
+  }
+
+  .hero-text pre {
+  	left: calc(50% - 165.5px);
+  	font-size: 52.23px;
+  	font-weight: 200;
+  	font-family: Roboto;
+  	text-align: left;
+  	text-shadow: 0px 2.176302194595337px 2.18px #4192e9;
+  }
+
+  .hero .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+  .hero-text p {
+    font-size: 27px;
+  }
+  .hero-text .btn {
+    width: auto;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+  }
+  .logo img {
+    height: 80px;
+  }
+ .content-section h2{
+  font-size: 20px;
+ }
+ .content-section h3{
+  font-size: 13px;
+ }
+ .content-section p{
+  font-size: 13px;
+  text-align: justify;
+ }
+ .text {
+  font-size: 13px;
+  text-align: justify;
+ }
+
+ .image img{
+   height: 300px;
+ }
+
+
+ footer {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center; 
+}
+
+footer div {
+  flex: 1;
+  min-width: 200px;
+  
+}
+
+footer a {
+  color: #0077b6; 
+  display: block;
+  text-decoration: 'poppins';
+  margin-top: 0.3rem;
+}
+
+footer strong {
+  font-size: 24px;
+  font-weight:bolder;
+}
+}
